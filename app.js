@@ -16,7 +16,7 @@ mongoose.connect(
 
 // On Connection
 mongoose.connection.on("connected", () => {
-  console.log("Connected to database");
+  console.log("Connected to database Liron & Ola");
 });
 
 const port = process.env.PORT || 5000;
