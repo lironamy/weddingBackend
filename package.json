@@ -5,7 +5,11 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "start": "node app.js"
+=======
+    "start": "npm install && node app.js"
+>>>>>>> 0c6bd3e2b55f5193b231010963543c233c688739
   },
   "keywords": [],
   "author": "",
@@ -13,6 +17,10 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
+<<<<<<< HEAD
     "mongoose": "^7.2.2"
+=======
+    "mongoose": "^6.10.1"
+>>>>>>> 0c6bd3e2b55f5193b231010963543c233c688739
   }
 }
