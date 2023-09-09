@@ -35,6 +35,18 @@ app.get("/api/data", async (req, res) => {
   }
 });
 
+// delete data from database
+app.delete("/api/data/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    await Attendee.findByIdAndDelete(id);
+    res.status(200).json({ message: "Deleted successfully" });
+  } catch (error) {
+    console.error("Failed to delete data:", error);
+    res.status(500).json({ error: "Failed to delete data" });
+  }
+});
+
 app.post("/api/register", async (req, res) => {
   try {
     const { firstName, phoneNumber, lastName, arriving, guestsAmount, notes } =
