@@ -47,6 +47,7 @@ app.delete("/api/data/:id", async (req, res) => {
   }
 });
 
+
 app.post("/api/register", async (req, res) => {
   try {
     const { firstName, phoneNumber, lastName, arriving, guestsAmount, notes } =
