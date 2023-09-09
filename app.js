@@ -35,6 +35,7 @@ app.get("/api/data", async (req, res) => {
   }
 });
 
+
 app.delete("/api/data/:id", async (req, res) => {
   try {
     const { id } = req.params;
