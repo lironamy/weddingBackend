@@ -49,7 +49,7 @@ app.delete("/api/data/:id", async (req, res) => {
 
 app.post("/api/register", async (req, res) => {
   try {
-    const { firstName, phoneNumber, lastName, arriving, guestsAmountAdults,guestsAmountKids, notes } =
+    const { firstName, phoneNumber, lastName, arriving, guestsAmountAdults,guestsAmountKids,specialDishes, notes } =
       req.body;
     console.log("Received registration request:", req.body);
     const attendee = new Attendee({
@@ -59,6 +59,7 @@ app.post("/api/register", async (req, res) => {
       arriving,
       guestsAmountAdults,
       guestsAmountKids,
+      specialDishes,
       notes,
     });
     console.log("Saving to database:", attendee);

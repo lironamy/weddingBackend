@@ -7,6 +7,7 @@ const attendeeSchema = new mongoose.Schema({
   arriving: { type: String, enum: ['כן', 'לא', 'אולי'], required: true },
   guestsAmountAdults: { type: String, required: true },
   guestsAmountKids: { type: String, required: true },
+  specialDishes: { type: String, enum: ['ללא מנה מיוחדת', 'צמחוני','טבעוני','ללא גלוטן','טבעוני + ללא גלוטן'], required: true },
   notes: { type: String},
 });
 
